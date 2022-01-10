@@ -1,0 +1,26 @@
+$boja1: rgb(135, 97, 223);
+$boja2: rgb(202, 191, 197);
+$boja3: rgb(79, 139, 79);
+$boja4: #000;
+$boja5: rgb(112, 120, 128);
+$vrijednost1:50px;
+$vrijednost2:20px;
+@mixin zabavni-font {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color:$boja3;
+    background-color: $boja2;
+}
+h1 {
+    @include zabavni-font;
+}
+
+@mixin samo-font {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:$boja5;
+    color:$boja2;
+}
+
+p {
+    @include samo-font;
+}
